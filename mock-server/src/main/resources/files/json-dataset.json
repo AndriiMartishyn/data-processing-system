@@ -1,0 +1,56 @@
+[
+  {
+    "applicationId": 1,
+    "student": {
+      "id": 101,
+      "name": "Alice Johnson",
+      "email": "alice.johnson@example.com",
+      "grades": [
+        85,
+        90,
+        78,
+        92,
+        88
+      ]
+    },
+    "course": "Computer Science",
+    "semester": "Fall 2024",
+    "status": "Pending"
+  },
+  {
+    "applicationId": 2,
+    "student": {
+      "id": 102,
+      "name": "Bob Smith",
+      "email": "bob.smith@example.com",
+      "grades": [
+        70,
+        65,
+        60,
+        75,
+        80
+      ]
+    },
+    "course": "Mechanical Engineering",
+    "semester": "Spring 2024",
+    "status": "Approved"
+  },
+  {
+    "applicationId": 3,
+    "student": {
+      "id": 103,
+      "name": "Charlie Brown",
+      "email": "charlie.brown@example.com",
+      "grades": [
+        50,
+        55,
+        58,
+        60,
+        62
+      ]
+    },
+    "course": "Civil Engineering",
+    "semester": "Fall 2024",
+    "status": "Rejected"
+  }
+]
