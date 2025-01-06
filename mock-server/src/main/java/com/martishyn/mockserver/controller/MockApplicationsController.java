@@ -25,6 +25,7 @@ public class MockApplicationsController {
         StreamingResponseBody jsonContent = output -> Files.copy(jsonFilePath, output);
         return ResponseEntity.ok()
                 .contentType(MediaType.APPLICATION_JSON)
+                .contentLength(jsonFilePath.toFile().length())
                 .body(jsonContent);
     }
 }
