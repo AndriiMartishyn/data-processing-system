@@ -7,6 +7,8 @@ public enum Status {
     PENDING,
     @JsonProperty("Approved")
     APPROVED,
+    @JsonProperty("Flagged")
+    FLAGGED,
     @JsonProperty("Rejected")
     REJECTED;
 

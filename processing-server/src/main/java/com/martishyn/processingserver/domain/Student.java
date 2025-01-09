@@ -7,6 +7,7 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import java.time.LocalDate;
+import java.util.List;
 
 @Getter
 @Setter
@@ -23,6 +24,8 @@ public class Student {
 
     private String email;
 
+    private List<Integer> grades;
 
+    @JsonProperty("date_of_birth")
     private LocalDate birthDate;
 }
