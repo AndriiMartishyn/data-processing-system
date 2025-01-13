@@ -3,6 +3,7 @@ package com.martishyn.processingserver.service.validation;
 import com.martishyn.processingserver.domain.Application;
 import com.martishyn.processingserver.domain.Status;
 import com.martishyn.processingserver.domain.Student;
+import org.flywaydb.core.Flyway;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDate;
@@ -39,7 +40,7 @@ public class IncomingApplicationValidationService implements ApplicationValidati
 
     private boolean hasValidName(String name) {
         matcher = NAME_VALIDATION_PATTERN.matcher(name);
-        return (name != null && !name.isEmpty() && matcher.matches());
+        return (name != null && !name.isEmpty() && matcher.find()); //to check memory consumption after changing matcher method
     }
 
     private boolean hasValidEmail(String email) {
